@@ -1,8 +1,22 @@
-# Getting Started with Create React App
+# CAT MATCHER
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Find the cat that you love the most
+
+## The problem
+
+There are in between 15 and 73 cat breeds in the world, so finding the one for a cat lover, it might be a difficult task. This app it is a first step to solve this problem. In order to keep the user entertained to tackle this difficult task, we came up with the idea of Tinder like cat matcher.
+
+## The proposed solution
+
+A user will start with 10 random cats and it will swipe until no more it's left. He can swipe either left if he doesn't like the cat, or right if he loves it. The algorithm behind it will find the most liked breed of cat that the user swiped right (liked ones). If it has more than 2 likes on that breed, it will show that breed as the matched one. Once the initial 10 cats are swiped, additional 10 cats will be loaded for the user.
+
+## Future versions
+
+Future versions might include machine learning in order to determine the most liked breed. I might also include additional information for the matched breed, also a list with previeously liked cats.
 
 ## Available Scripts
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 In the project directory, you can run:
 
