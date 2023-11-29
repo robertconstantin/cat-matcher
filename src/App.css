@@ -27,29 +27,3 @@ h1 {
   background: var(--color-gray);
   padding: 0 20px;
 }
-
-.helper {
-  width: 100%;
-  display: flex;
-}
-
-.swipe-left,
-.swipe-right {
-  width: 50%;
-  background: var(--color-green);
-  padding: 20px 10px;
-  color: var(--color-white);
-  font-size: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.swipe-left {
-  background: var(--color-red);
-}
-
-.matched {
-  color: var(--color-green);
-  text-transform: uppercase;
-}

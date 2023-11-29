@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 
+import './image-card.styles.css';
+
 const ImageCard = ({ src, breed }) => {
   const placeholder = "./placeholder-image.jpg";
   const useProgressiveImage = (src) => {

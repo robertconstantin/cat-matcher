@@ -1,6 +1,8 @@
 import { useState, useEffect, useRef } from 'react';
 
 import CatCard from './components/cat-card/cat-card.component';
+import Matched from './components/matched/matched.component';
+import Header from './components/header/header.component';
 import './App.css';
 
 const api_key = process.env.REACT_APP_API_KEY;
@@ -72,26 +74,11 @@ function App() {
     updateCurrentIndex(index - 1)
   }
 
-
   return (
     <div className='cat-app'>
-      <h1>Cat Matcher</h1>
-      <p>Swipe to find out what cat matches you the most</p>
+      <Header />
       <CatCard cats={cats} swipeHandler={swipeHandler} loading={loading} />
-      <div className='helper'>
-        <div className='swipe-left'>
-          I don't like it!
-        </div>
-        <div className='swipe-right'>
-          I love it!
-        </div>
-      </div>
-      {matched ? (
-        <h2 className='matched'>We have a match: {matched}</h2>
-      ) : (
-        <h2 className='swipe-more'>Swipe more</h2>
-      )}
-
+      <Matched matched={matched} />
     </div>
   )
 }

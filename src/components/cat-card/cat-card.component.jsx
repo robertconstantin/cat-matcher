@@ -8,7 +8,7 @@ const CatCard = ({cats, swipeHandler, loading}) => {
   return (
     <div className="card-container">
       {loading ? (
-        <div>"Loading..."</div>
+        <div className='card loading'>"Loading..."</div>
       ) : (
         cats.map((cat, index) => {
           const breed = cat.breeds[0].name;
