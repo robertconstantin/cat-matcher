@@ -1,38 +1,55 @@
-.App {
-  text-align: center;
+body {
+  font-family: "Lato";
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --color-red: #f44336;
+  --color-green: #4caf50;
+  --color-white: #fff;
+  --color-gray: #fbfbfb;
+  --color-black: #000;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  text-transform: uppercase;
+  font-size: 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cat-app {
+  width: 600px;
+  max-width: 85vw;
+  padding-top: 5vh;
+  margin: 0 auto;
   display: flex;
-  flex-direction: column;
+  flex-flow: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
+  background: var(--color-gray);
+  padding: 0 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.helper {
+  width: 100%;
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.swipe-left,
+.swipe-right {
+  width: 50%;
+  background: var(--color-green);
+  padding: 20px 10px;
+  color: var(--color-white);
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.swipe-left {
+  background: var(--color-red);
+}
+
+.matched {
+  color: var(--color-green);
+  text-transform: uppercase;
 }
